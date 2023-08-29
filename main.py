@@ -29,7 +29,7 @@ img_width = 180
 # # Get input and output details from the model
 # input_details = interpreter.get_input_details()
 # output_details = interpreter.get_output_details()
-
+# g
 # Creating parameters for loader
 batch_size = 32
 img_height = 180
