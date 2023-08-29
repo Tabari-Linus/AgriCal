@@ -60,7 +60,7 @@ async def predict_image(file: UploadFile = File(...)):
         img = tf.keras.utils.load_img(image, target_size=(img_height, img_width))    
         img_array = tf.keras.utils.img_to_array(img)
         img_array = tf.expand_dims(img_array, 0)
-        loaded_model = tf.keras.models.load_model('/Users/alexanderboakye/Desktop/Projects/Agrical/myapi/fruit_model.h5')
+        loaded_model = tf.keras.models.load_model('./fruit_model.h5')
         predictions = loaded_model.predict(img_array)
 
         score = tf.nn.softmax(predictions[0])
